@@ -122,6 +122,7 @@ jobs:
       full_units: ${{ needs.plan.outputs.full_units }}
       base_sha: ${{ needs.plan.outputs.base_sha }}
       head_sha: ${{ needs.plan.outputs.head_sha }}
+      mise_runner: true
   velnor-docs-links:
     name: "Documentation · Docs link check"
     if: ${{ always() && needs.plan.result == 'success' && contains(format(',{0},', needs.plan.outputs.units), ',docs-links,') && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) }}
