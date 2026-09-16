@@ -1,0 +1,6 @@
+[tools]
+lychee = "0.18.1"
+
+[tasks.links]
+description = "Check Markdown links"
+run = "lychee --no-progress --offline --include-fragments README.md FUTURE_SQL.md"
