@@ -24,3 +24,4 @@ kind = "docs"
 root = "."
 watch = ["README.md", "FUTURE_SQL.md"]
 ci_tasks = ["links"]
+mise_tools = ["lychee"]
